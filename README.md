@@ -1,1 +1,29 @@
 # security-chat
+from threading import Thread
+import socket
+
+def Send(socket):
+    while True:
+        msg = input("->")
+        msg = msg.encode("utf-8")
+        socket.send(msg)
+def Reception(socket):
+     while True:
+         requete_server = socket.recv(500)
+         requete_server = requete_server.decoce("utf-8")
+         print(requete_server)       
+
+Host ="192.168.100.79"
+Port = 6390
+
+
+socket = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
+socket.connect((Host,Port))
+
+envoi = Thread(target=Send,args=[socket])
+recep = Thread(target=Reception,args=[socket])
+
+envoi.start()
+recep.start()
+   
+   
