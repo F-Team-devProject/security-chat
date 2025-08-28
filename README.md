@@ -3,4 +3,4 @@ This project, **security-chat**, is an end-to-end encrypted chat application des
 
 # Contributor
 - Melvine
-- Daniel
+- Daniel Bryan
