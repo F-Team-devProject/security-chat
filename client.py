@@ -12,12 +12,12 @@ def Reception(socket):
          requete_server = requete_server.decoce("utf-8")
          print(requete_server)       
 
-Host ="192.168.100.79"
+Host ="0.0.0.0"
 Port = 6390
 
 
 socket = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
-socket.connect((Host,Port))
+socket.connect((Host),(Port))
 
 envoi = Thread(target=Send,args=[socket])
 recep = Thread(target=Reception,args=[socket])
