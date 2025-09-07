@@ -37,4 +37,4 @@ recep.start()
 recep.join()
 
 client.close()
-socket.close()    
+socket.close()
