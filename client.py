@@ -12,7 +12,7 @@ def Reception(socket):
          requete_server = requete_server.decoce("utf-8")
          print(requete_server)       
 
-Host ="0.0.0.0"
+Host ="127.000.1"
 Port = 6390
 
 

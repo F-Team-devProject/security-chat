@@ -15,7 +15,7 @@ def Reception(client):
         print("CLOSE")
         break
 
-Host ="127.000.1"
+Host ="0.0.0.0"
 Port = 6390
 
 
