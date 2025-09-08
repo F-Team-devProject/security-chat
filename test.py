@@ -15,7 +15,7 @@ def Reception(client):
         print("CLOSE")
         break
 
-Host ="0.0.0.0"
+Host ="192.168.100.79"
 Port = 6390
 
 
@@ -37,4 +37,4 @@ recep.start()
 recep.join()
 
 client.close()
-socket.close()
+socket.close()    
